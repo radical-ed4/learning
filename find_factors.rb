@@ -16,9 +16,6 @@ end
 
 
 #puts "---------Find Factors----------"
-puts find_factors(33, [1, 10, 11, 15, 18, 20])
-puts find_factors(81, [2, 3, 9, 16, 51, 53])
-puts find_factors(17, [2, 3, 4, 5, 6, 7, 8, 9])
 puts find_factors(33, [1, 10, 11, 15, 18, 20]) == [1, 11]
 puts find_factors(81, [2, 3, 9, 16, 51, 53]) == [3, 9]
 puts find_factors(17, [2, 3, 4, 5, 6, 7, 8, 9]) == []
