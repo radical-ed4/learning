@@ -6,8 +6,9 @@ loop do
     add:     to add a movie and its rating
     update:  to update a movie rating
     display: to show all movies and ratings
-    delete:  to delete a movie from your list"
-  
+    delete:  to delete a movie from your list
+    quit:    to quit the program"
+    
   choice = gets.chomp.downcase
 
   case choice
@@ -49,10 +50,19 @@ loop do
       puts "The movie has been deleted!"
     end
   
+  when choice = "quit"
+    break
+
+  # If selection is not one of the 5 above, display error message
   else
     puts "Your entry is incorrect, do you want to try again?"
-    choice = gets.chomp
-    break if choice == "no"
+    choice = gets.chomp.downcase
+    # Quit the program if the answer is not yes, otherwise start the program from the beginning using loop
+    if choice == "no"
+      break
+    elsif choice != "yes"
+      puts "I don't understand, sorry! You will now exit the program"
+      break
+    end 
   end
-
 end
