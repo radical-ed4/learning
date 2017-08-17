@@ -1,4 +1,11 @@
-movies = { Trainspotting: 5, Sleepy_Hollow: 4, The_Crow: 4, Catwoman: 1, Pinapple_Express: 3, Matrix_3: 1}
+movies = {
+  "Trainspotting" => 5,
+  "Sleepy Hollow" => 4,
+  "The Crow" => 4,
+  "Catwoman" => 1,
+  "Pinapple Express" => 3,
+  "Matrix 3" => 1
+}
 
 loop do
   puts "What would you like to do?
